@@ -1,0 +1,130 @@
+{
+  "common": {
+    "back": "Înapoi",
+    "cancel": "Anulează",
+    "save": "Salvează",
+    "delete": "Șterge",
+    "edit": "Editează",
+    "create": "Creează",
+    "loading": "Se încarcă...",
+    "error": "Eroare",
+    "success": "Succes",
+    "retry": "Încearcă din nou",
+    "yes": "Da",
+    "no": "Nu",
+    "or": "Sau"
+  },
+  "nav": {
+    "home": "Acasă",
+    "products": "Produse",
+    "scan": "Scanează",
+    "settings": "Setări"
+  },
+  "home": {
+    "title": "MiniStock",
+    "subtitle": "Management simplu de inventar pentru mici magazine de retail",
+    "viewProducts": "Vezi Produse",
+    "scanBarcode": "Scanează Cod de Bare",
+    "manageInventory": "Gestionează-ți inventarul cu ușurință",
+    "features": {
+      "realtime": {
+        "title": "Actualizări în Timp Real",
+        "description": "Urmărește modificările de inventar în timp real pe toate dispozitivele"
+      },
+      "barcode": {
+        "title": "Scanare Cod de Bare",
+        "description": "Folosește camera telefonului pentru a scana coduri de bare rapid"
+      },
+      "alerts": {
+        "title": "Alerte Stoc Redus",
+        "description": "Primește notificări când produsele sunt pe terminate"
+      }
+    }
+  },
+  "products": {
+    "title": "Produse",
+    "newProduct": "Produs Nou",
+    "noProducts": "Nu s-au găsit produse. Adaugă primul produs pentru a începe!",
+    "loading": "Se încarcă produsele...",
+    "fetchError": "Eroare la încărcarea produselor",
+    "sku": "SKU",
+    "stock": "Stoc",
+    "price": "Preț",
+    "category": "Categorie",
+    "barcode": "Cod de Bare",
+    "lowStockAlert": "Alertă Stoc Redus!",
+    "viewDetails": "Vezi Detalii Complete",
+    "updateStock": "Actualizează Stoc",
+    "backToHome": "← Înapoi la Acasă"
+  },
+  "product": {
+    "new": {
+      "title": "Adaugă Produs Nou",
+      "subtitle": "Creează un produs nou în inventarul tău",
+      "name": "Nume Produs",
+      "description": "Descriere",
+      "sku": "SKU",
+      "generateSku": "Generează",
+      "barcode": "Cod de Bare",
+      "category": "Categorie",
+      "price": "Preț de Vânzare",
+      "cost": "Preț de Cost",
+      "initialStock": "Stoc Inițial",
+      "lowStockThreshold": "Alertă Stoc Redus La",
+      "unit": "Unitate",
+      "imageUrl": "URL Imagine (opțional)",
+      "create": "Creează Produs",
+      "creating": "Se creează...",
+      "created": "Produs creat cu succes! Redirecționare...",
+      "nameRequired": "Numele produsului și SKU-ul sunt obligatorii",
+      "negativePrice": "Prețul și costul nu pot fi negative",
+      "nameRequiredForSku": "Te rugăm să introduci mai întâi numele produsului"
+    },
+    "units": {
+      "pcs": "Bucăți (buc)",
+      "kg": "Kilograme (kg)",
+      "g": "Grame (g)",
+      "l": "Litri (l)",
+      "ml": "Mililitri (ml)",
+      "box": "Cutie",
+      "pack": "Pachet",
+      "unit": "Unitate"
+    }
+  },
+  "scan": {
+    "title": "Scanner Cod de Bare",
+    "subtitle": "Scanează un cod de bare pentru a găsi sau actualiza un produs",
+    "startCamera": "Pornește Camera",
+    "stopScanning": "Oprește Scanarea",
+    "loadingScanner": "Se încarcă scannerul...",
+    "scanned": "Scanat",
+    "enterManually": "Sau Introdu Codul de Bare Manual",
+    "loadingProduct": "Se încarcă produsul...",
+    "notFound": "Produsul cu codul de bare \"{barcode}\" nu a fost găsit. Vrei să îl creezi?",
+    "notFoundNoBarcode": "Produsul nu a fost găsit. Vrei să îl creezi?",
+    "createNew": "Creează Produs Nou",
+    "fetchError": "Eroare la încărcarea produsului. Te rugăm să încerci din nou.",
+    "stockAmount": "Cantitate Stoc",
+    "add": "Adaugă",
+    "subtract": "Scade",
+    "set": "Setează",
+    "enterAmount": "Introdu cantitatea",
+    "invalidAmount": "Te rugăm să introduci o cantitate validă de stoc",
+    "updateError": "Eroare la actualizarea stocului. Te rugăm să încerci din nou.",
+    "tip": "💡 Poziționează codul de bare în cadru. Scannerul funcționează cel mai bine în condiții de lumină bună.",
+    "supportedFormats": "Formate acceptate: {formats}"
+  },
+  "scanner": {
+    "permissionDenied": "Permisiunea camerei a fost refuzată. Te rugăm să permiți accesul la cameră.",
+    "noCamera": "Nu s-a găsit cameră pe acest dispozitiv",
+    "cameraInUse": "Camera este deja utilizată de o altă aplicație",
+    "startError": "Eroare la pornirea camerei",
+    "notSupported": "Accesul la cameră nu este suportat în acest browser"
+  },
+  "language": {
+    "switch": "Schimbă Limba",
+    "english": "English",
+    "romanian": "Română"
+  }
+}
+

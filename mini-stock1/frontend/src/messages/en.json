@@ -1,0 +1,130 @@
+{
+  "common": {
+    "back": "Back",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "retry": "Retry",
+    "yes": "Yes",
+    "no": "No",
+    "or": "Or"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "scan": "Scan",
+    "settings": "Settings"
+  },
+  "home": {
+    "title": "MiniStock",
+    "subtitle": "Lightweight inventory management for small retail shops",
+    "viewProducts": "View Products",
+    "scanBarcode": "Scan Barcode",
+    "manageInventory": "Manage your inventory with ease",
+    "features": {
+      "realtime": {
+        "title": "Real-time Updates",
+        "description": "Track inventory changes in real-time across all devices"
+      },
+      "barcode": {
+        "title": "Barcode Scanning",
+        "description": "Use your phone camera to scan barcodes quickly"
+      },
+      "alerts": {
+        "title": "Low Stock Alerts",
+        "description": "Get notified when products are running low"
+      }
+    }
+  },
+  "products": {
+    "title": "Products",
+    "newProduct": "New Product",
+    "noProducts": "No products found. Add your first product to get started!",
+    "loading": "Loading products...",
+    "fetchError": "Failed to fetch products",
+    "sku": "SKU",
+    "stock": "Stock",
+    "price": "Price",
+    "category": "Category",
+    "barcode": "Barcode",
+    "lowStockAlert": "Low Stock Alert!",
+    "viewDetails": "View Full Details",
+    "updateStock": "Update Stock",
+    "backToHome": "← Back to Home"
+  },
+  "product": {
+    "new": {
+      "title": "Add New Product",
+      "subtitle": "Create a new product in your inventory",
+      "name": "Product Name",
+      "description": "Description",
+      "sku": "SKU",
+      "generateSku": "Generate",
+      "barcode": "Barcode",
+      "category": "Category",
+      "price": "Selling Price",
+      "cost": "Cost Price",
+      "initialStock": "Initial Stock",
+      "lowStockThreshold": "Low Stock Alert At",
+      "unit": "Unit",
+      "imageUrl": "Image URL (optional)",
+      "create": "Create Product",
+      "creating": "Creating...",
+      "created": "Product created successfully! Redirecting...",
+      "nameRequired": "Product name and SKU are required",
+      "negativePrice": "Price and cost cannot be negative",
+      "nameRequiredForSku": "Please enter a product name first"
+    },
+    "units": {
+      "pcs": "Pieces (pcs)",
+      "kg": "Kilograms (kg)",
+      "g": "Grams (g)",
+      "l": "Liters (l)",
+      "ml": "Milliliters (ml)",
+      "box": "Box",
+      "pack": "Pack",
+      "unit": "Unit"
+    }
+  },
+  "scan": {
+    "title": "Barcode Scanner",
+    "subtitle": "Scan a barcode to find or update a product",
+    "startCamera": "Start Camera",
+    "stopScanning": "Stop Scanning",
+    "loadingScanner": "Loading scanner...",
+    "scanned": "Scanned",
+    "enterManually": "Or Enter Barcode Manually",
+    "loadingProduct": "Loading product...",
+    "notFound": "Product with barcode \"{barcode}\" not found. Would you like to create it?",
+    "notFoundNoBarcode": "Product not found. Would you like to create it?",
+    "createNew": "Create New Product",
+    "fetchError": "Failed to fetch product. Please try again.",
+    "stockAmount": "Stock Amount",
+    "add": "Add",
+    "subtract": "Subtract",
+    "set": "Set",
+    "enterAmount": "Enter amount",
+    "invalidAmount": "Please enter a valid stock amount",
+    "updateError": "Failed to update stock. Please try again.",
+    "tip": "💡 Position the barcode within the frame. The scanner works best in good lighting conditions.",
+    "supportedFormats": "Supported formats: {formats}"
+  },
+  "scanner": {
+    "permissionDenied": "Camera permission denied. Please allow camera access.",
+    "noCamera": "No camera found on this device",
+    "cameraInUse": "Camera is already in use by another application",
+    "startError": "Failed to start camera",
+    "notSupported": "Camera access is not supported in this browser"
+  },
+  "language": {
+    "switch": "Switch Language",
+    "english": "English",
+    "romanian": "Română"
+  }
+}
+
