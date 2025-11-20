@@ -1,0 +1,72 @@
+services:
+  # MongoDB Database Service
+  - type: pserv
+    name: ministock-mongodb
+    plan: free
+    region: oregon
+    image: mongo:7
+    envVars:
+      - key: MONGO_INITDB_ROOT_USERNAME
+        value: admin
+      - key: MONGO_INITDB_ROOT_PASSWORD
+        sync: false  # Set this in Render dashboard with a secure password
+      - key: MONGO_INITDB_DATABASE
+        value: ministock
+    disk:
+      name: mongodb-data
+      mountPath: /data/db
+      sizeGB: 1
+
+  # Backend API Service
+  - type: web
+    name: ministock-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    region: oregon
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: MONGODB_HOST
+        fromService:
+          type: pserv
+          name: ministock-mongodb
+          property: host
+      - key: MONGO_INITDB_ROOT_USERNAME
+        value: admin
+      - key: MONGO_INITDB_DATABASE
+        value: ministock
+      # MONGO_INITDB_ROOT_PASSWORD should match the one set in MongoDB service
+      - key: MONGO_INITDB_ROOT_PASSWORD
+        sync: false  # Set this to match the password in MongoDB service
+      - key: JWT_SECRET
+        sync: false  # Set this in Render dashboard with a secure secret
+      - key: FRONTEND_URL
+        fromService:
+          type: web
+          name: ministock-frontend
+          property: host
+        transform: "https://${host}"
+    healthCheckPath: /health
+
+  # Frontend Web Service
+  - type: web
+    name: ministock-frontend
+    runtime: docker
+    dockerfilePath: ./frontend/Dockerfile
+    dockerContext: ./frontend
+    plan: free
+    region: oregon
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          type: web
+          name: ministock-backend
+          property: host
+        transform: "https://${host}/api"
+

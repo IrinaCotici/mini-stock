@@ -11,9 +11,12 @@ RUN npm ci
 # Copy source code
 COPY . .
 
+# Build TypeScript
+RUN npm run build
+
 # Expose port
 EXPOSE 3001
 
-# Start the application
-CMD ["npm", "run", "dev"]
+# Start the application in production mode
+CMD ["npm", "start"]
 

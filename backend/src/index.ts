@@ -16,7 +16,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // MongoDB connection
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://admin:admin123@localhost:27017/ministock?authSource=admin';
+// Construct URI from components if MONGODB_URI is not provided
+const MONGODB_URI = process.env.MONGODB_URI || 
+  (process.env.MONGODB_HOST 
+    ? `mongodb://${process.env.MONGO_INITDB_ROOT_USERNAME || 'admin'}:${process.env.MONGO_INITDB_ROOT_PASSWORD || 'admin123'}@${process.env.MONGODB_HOST}:27017/${process.env.MONGO_INITDB_DATABASE || 'ministock'}?authSource=admin`
+    : 'mongodb://admin:admin123@localhost:27017/ministock?authSource=admin');
 
 mongoose
   .connect(MONGODB_URI)
