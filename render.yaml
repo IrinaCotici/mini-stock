@@ -4,7 +4,8 @@ services:
     name: ministock-mongodb
     plan: free
     region: oregon
-    image: mongo:7
+    docker:
+      image: mongo:7
     envVars:
       - key: MONGO_INITDB_ROOT_USERNAME
         value: admin
